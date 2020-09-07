@@ -1,0 +1,216 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10686133000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User signs up with valid and invalid credentials",
+        "description": "",
+        "id": "sign-up-to-account;user-signs-up-with-valid-and-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 668378200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User navigates to community platform signup page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "comments": [
+              {
+                "line": 9,
+                "value": "#    And   User clicks on the signup button on landing page"
+              }
+            ],
+            "line": 10,
+            "name": "User enters an \"herogodsway.com\" and \"12345678!A\"",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User \"12345678!A\"",
+            "match": {},
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user selects user type",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User clicks on the signup button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "user should be noticed with a success or failure \"Invaliddatainput.Passwordsmismatch\" depending on the credentials used",
+            "match": {},
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5578097300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User signs up with valid and invalid credentials",
+        "description": "",
+        "id": "sign-up-to-account;user-signs-up-with-valid-and-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 663362900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User navigates to community platform signup page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "comments": [
+              {
+                "line": 9,
+                "value": "#    And   User clicks on the signup button on landing page"
+              }
+            ],
+            "line": 10,
+            "name": "User enters an \"herogodsway@yahoocom\" and \"12345678!A\"",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User \"12345678!A\"",
+            "match": {},
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user selects user type",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User clicks on the signup button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "user should be noticed with a success or failure \"Invaliddatainput.Passwordsmismatch\" depending on the credentials used",
+            "match": {},
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Sign up to account",
+    "description": "       Verify that user sign up is unsuccessful after passing incorrect credentials\r\n       but successful only with valid credentials",
+    "id": "sign-up-to-account",
+    "keyword": "Feature",
+    "uri": "F:/SignUp/signup/src/test/java/Community_Platform/signup.feature"
+  }
+]
