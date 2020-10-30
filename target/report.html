@@ -31,7 +31,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -44,7 +45,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 7, 2020 04:00:44 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 15, 2020 02:27:59 PM</span>
 				</a>
 			</li>
 			<li>
@@ -70,7 +71,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -78,6 +78,20 @@
 			<!-- test toggle -->
 
 			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@COMMUNITY-190</a></li>
+					<li><a href='#'>@REQ_COMMUNITY-2</a></li>
+					<li><a href='#'>@TEST_COMMUNITY-268</a></li>
+					<li><a href='#'>@REQ_COMMUNITY-8</a></li>
+					<li><a href='#'>@TESTSET_COMMUNITY-189</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
 			<!-- category toggle -->
 
 			<!-- clear filters -->
@@ -121,10 +135,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>60</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>12</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -136,10 +150,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>60</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>12</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -154,26 +168,32 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf skip' status='skip' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Sign up to account</span>
-						<span class='test-time'>Sep 7, 2020 04:00:45 PM</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='test-name'>Marketplace</span>
+						<span class='test-time'>Sep 15, 2020 02:27:59 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 7, 2020 04:00:45 PM</span>
-	<span class='label end-time'>Sep 7, 2020 04:01:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+592ms</span>
+	<span class='label start-time'>Sep 15, 2020 02:27:59 PM</span>
+	<span class='label end-time'>Sep 15, 2020 02:30:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 55s+637ms</span>
 </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>@COMMUNITY-190</span>
+				<span class='category label white-text'>@REQ_COMMUNITY-2</span>
+			</div>
+	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1  skip' status='skip' test-id='2'>
+				<li class='node level-1  pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Scenario Outline: User signs up with valid and invalid credentials</div>						
-						<span class='node-time'>Sep 7, 2020 04:00:45 PM</span>
-						<span class='node-duration'>0h 0m 17s+592ms</span>
-						<span class='test-status right skip'>skip</span>
+						<div class='node-name'>Scenario Outline: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:27:59 PM</span>
+						<span class='node-duration'>0h 2m 55s+632ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -188,28 +208,28 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>4:00:45 PM</td>
-													<td class='step-details'><table><tr><td>email</td><td>password</td><td>confirm password</td><td>message</td></tr><tr><td>herogodsway.com</td><td>12345678!A</td><td>12345678!A</td><td>Invaliddatainput.Passwordsmismatch</td></tr><tr><td>herogodsway@yahoocom</td><td>12345678!A</td><td>12345678!A</td><td>Invaliddatainput.Passwordsmismatch</td></tr></table></td>
+													<td class='timestamp'>2:27:59 PM</td>
+													<td class='step-details'><table><tr><td>email</td><td>password</td><td>confirm password</td><td>message</td></tr><tr><td>testing.amalitech.com</td><td>12345678!A</td><td>12345678!A</td><td></td></tr><tr><td>testing.amalitech@gmailcom</td><td>12345678!A</td><td>12345678!A</td><td>Check E-mail: Please enter the correct email address or phone number</td></tr><tr><td>testing.amalitech@gmail.com</td><td>12354678!A</td><td>12345678!A</td><td>Check Password: There should be at least one lowercase character</td></tr><tr><td>testing.amalitech.gmail.com</td><td>12345678!Aa</td><td>12345678!Aa</td><td></td></tr><tr><td>testing.amalitech@gmail.com</td><td>12345678!Aa</td><td>12345678!Aa</td><td>A confirmation has been sent to your email. Please retrieve the code and confirm acount</td></tr><tr><td>testing.amalitech@gmail.com</td><td>12345678!A</td><td></td><td>Check Password: There should be at least one lowercase character</td></tr><tr><td>testing.amalitech@gmail.com</td><td></td><td>12345678!Aa</td><td>Check Password: There should be at least one lowercase character</td></tr><tr><td>testing.amalitech@gmail.com</td><td></td><td></td><td>Check Password: There should be at least one lowercase character</td></tr><tr><td></td><td>12345678!Aa</td><td>12345678!Aa</td><td>Check E-mail: Please enter the correct email address or phone number</td></tr><tr><td>testing.amalitech@gmail.com</td><td>12345678!Aa</td><td>12345678!Aa</td><td>User with this email already exists</td></tr></table></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2  skip' status='skip' test-id='3'>
+				<li class='node level-2  pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Scenario: User signs up with valid and invalid credentials</div>						
-						<span class='node-time'>Sep 7, 2020 04:00:45 PM</span>
-						<span class='node-duration'>0h 0m 10s+737ms</span>
-						<span class='test-status right skip'>skip</span>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:27:59 PM</span>
+						<span class='node-duration'>0h 0m 19s+657ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-3 leaf skip' status='skip' test-id='4'>
+				<li class='node level-3 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Given User navigates to community platform signup page</div>						
-						<span class='node-time'>Sep 7, 2020 04:00:56 PM</span>
-						<span class='node-duration'>0h 0m 0s+40ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Sep 15, 2020 02:28:05 PM</span>
+						<span class='node-duration'>0h 0m 4s+550ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -222,22 +242,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:00:56 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:10 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='5'>
+				<li class='node level-3 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
-						<div class='node-name'>When User enters an "herogodsway.com" and "12345678!A"</div>						
-						<span class='node-time'>Sep 7, 2020 04:00:56 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<div class='node-name'>When User enters an "testing.amalitech.com" and "12345678!A"</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+369ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -250,22 +270,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:00:56 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:10 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='6'>
+				<li class='node level-3 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User "12345678!A"</div>						
-						<span class='node-time'>Sep 7, 2020 04:00:56 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Sep 15, 2020 02:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+70ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -278,22 +298,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:00:56 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:10 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='7'>
+				<li class='node level-3 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then user selects user type</div>						
-						<span class='node-time'>Sep 7, 2020 04:00:56 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Sep 15, 2020 02:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+45ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -306,22 +326,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:00:56 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:10 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='8'>
+				<li class='node level-3 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User clicks on the signup button</div>						
-						<span class='node-time'>Sep 7, 2020 04:00:56 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Sep 15, 2020 02:28:10 PM</span>
+						<span class='node-duration'>0h 0m 0s+227ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -334,22 +354,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:00:56 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:11 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='9'>
+				<li class='node level-3 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then user should be noticed with a success or failure "Invaliddatainput.Passwordsmismatch" depending on the credentials used</div>						
-						<span class='node-time'>Sep 7, 2020 04:00:56 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<div class='node-name'>Then user should be noticed with a success or failure "" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:11 PM</span>
+						<span class='node-duration'>0h 0m 8s+159ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -362,10 +382,10 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:00:56 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:19 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
@@ -374,20 +394,20 @@
 				</li>
 						</ul>
 				</li>
-				<li class='node level-2  skip' status='skip' test-id='10'>
+				<li class='node level-2  pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Scenario: User signs up with valid and invalid credentials</div>						
-						<span class='node-time'>Sep 7, 2020 04:00:57 PM</span>
-						<span class='node-duration'>0h 0m 5s+583ms</span>
-						<span class='test-status right skip'>skip</span>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:19 PM</span>
+						<span class='node-duration'>0h 0m 16s+868ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-3 leaf skip' status='skip' test-id='11'>
+				<li class='node level-3 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Given User navigates to community platform signup page</div>						
-						<span class='node-time'>Sep 7, 2020 04:01:02 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Sep 15, 2020 02:28:25 PM</span>
+						<span class='node-duration'>0h 0m 3s+82ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -400,22 +420,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:01:02 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:28 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='12'>
+				<li class='node level-3 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
-						<div class='node-name'>When User enters an "herogodsway@yahoocom" and "12345678!A"</div>						
-						<span class='node-time'>Sep 7, 2020 04:01:02 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<div class='node-name'>When User enters an "testing.amalitech@gmailcom" and "12345678!A"</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:28 PM</span>
+						<span class='node-duration'>0h 0m 0s+195ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -428,22 +448,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:01:02 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:28 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='13'>
+				<li class='node level-3 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User "12345678!A"</div>						
-						<span class='node-time'>Sep 7, 2020 04:01:02 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Sep 15, 2020 02:28:28 PM</span>
+						<span class='node-duration'>0h 0m 0s+74ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -456,22 +476,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:01:02 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:28 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='14'>
+				<li class='node level-3 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then user selects user type</div>						
-						<span class='node-time'>Sep 7, 2020 04:01:02 PM</span>
-						<span class='node-duration'>0h 0m 0s+1ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Sep 15, 2020 02:28:28 PM</span>
+						<span class='node-duration'>0h 0m 0s+46ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -484,22 +504,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:01:02 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:28 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='15'>
+				<li class='node level-3 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And User clicks on the signup button</div>						
-						<span class='node-time'>Sep 7, 2020 04:01:02 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Sep 15, 2020 02:28:28 PM</span>
+						<span class='node-duration'>0h 0m 0s+84ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -512,22 +532,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:01:02 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:28 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-3 leaf skip' status='skip' test-id='16'>
+				<li class='node level-3 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then user should be noticed with a success or failure "Invaliddatainput.Passwordsmismatch" depending on the credentials used</div>						
-						<span class='node-time'>Sep 7, 2020 04:01:02 PM</span>
-						<span class='node-duration'>0h 0m 0s+0ms</span>
-						<span class='test-status right skip'>skip</span>
+						<div class='node-name'>Then user should be noticed with a success or failure "Check E-mail: Please enter the correct email address or phone number" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:28 PM</span>
+						<span class='node-duration'>0h 0m 8s+25ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -540,10 +560,1434 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>4:01:02 PM</td>
-													<td class='step-details'>undefined</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='17'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:37 PM</span>
+						<span class='node-duration'>0h 0m 15s+683ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='18'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to community platform signup page</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:42 PM</span>
+						<span class='node-duration'>0h 0m 2s+108ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:44 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='19'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When User enters an "testing.amalitech@gmail.com" and "12354678!A"</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:44 PM</span>
+						<span class='node-duration'>0h 0m 0s+189ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:44 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='20'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User "12345678!A"</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:44 PM</span>
+						<span class='node-duration'>0h 0m 0s+74ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:44 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='21'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user selects user type</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:44 PM</span>
+						<span class='node-duration'>0h 0m 0s+43ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:44 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='22'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User clicks on the signup button</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:44 PM</span>
+						<span class='node-duration'>0h 0m 0s+39ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:45 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='23'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user should be noticed with a success or failure "Check Password: There should be at least one lowercase character" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:45 PM</span>
+						<span class='node-duration'>0h 0m 8s+22ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:28:53 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='24'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:53 PM</span>
+						<span class='node-duration'>0h 0m 15s+888ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='25'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to community platform signup page</div>						
+						<span class='node-time'>Sep 15, 2020 02:28:58 PM</span>
+						<span class='node-duration'>0h 0m 2s+284ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:01 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='26'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When User enters an "testing.amalitech.gmail.com" and "12345678!Aa"</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:01 PM</span>
+						<span class='node-duration'>0h 0m 0s+200ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:01 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='27'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User "12345678!Aa"</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:01 PM</span>
+						<span class='node-duration'>0h 0m 0s+72ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:01 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='28'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user selects user type</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:01 PM</span>
+						<span class='node-duration'>0h 0m 0s+42ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:01 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='29'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User clicks on the signup button</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:01 PM</span>
+						<span class='node-duration'>0h 0m 0s+56ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:01 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='30'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user should be noticed with a success or failure "" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:01 PM</span>
+						<span class='node-duration'>0h 0m 8s+46ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:09 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='31'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:10 PM</span>
+						<span class='node-duration'>0h 0m 15s+692ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='32'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to community platform signup page</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:15 PM</span>
+						<span class='node-duration'>0h 0m 2s+69ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:17 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='33'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When User enters an "testing.amalitech@gmail.com" and "12345678!Aa"</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+191ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:17 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='34'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User "12345678!Aa"</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+72ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:17 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='35'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user selects user type</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+42ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:17 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='36'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User clicks on the signup button</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:17 PM</span>
+						<span class='node-duration'>0h 0m 0s+40ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:17 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='37'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user should be noticed with a success or failure "A confirmation has been sent to your email. Please retrieve the code and confirm acount" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:17 PM</span>
+						<span class='node-duration'>0h 0m 8s+57ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:25 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='38'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:26 PM</span>
+						<span class='node-duration'>0h 0m 15s+670ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='39'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to community platform signup page</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:31 PM</span>
+						<span class='node-duration'>0h 0m 2s+16ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:33 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='40'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When User enters an "testing.amalitech@gmail.com" and "12345678!A"</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:33 PM</span>
+						<span class='node-duration'>0h 0m 0s+204ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:33 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='41'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User ""</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:33 PM</span>
+						<span class='node-duration'>0h 0m 0s+49ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:34 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='42'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user selects user type</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:34 PM</span>
+						<span class='node-duration'>0h 0m 0s+45ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:34 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='43'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User clicks on the signup button</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:34 PM</span>
+						<span class='node-duration'>0h 0m 0s+41ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:34 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='44'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user should be noticed with a success or failure "Check Password: There should be at least one lowercase character" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:34 PM</span>
+						<span class='node-duration'>0h 0m 8s+27ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:42 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='45'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:42 PM</span>
+						<span class='node-duration'>0h 0m 16s+603ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='46'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to community platform signup page</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:48 PM</span>
+						<span class='node-duration'>0h 0m 2s+893ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:50 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='47'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When User enters an "testing.amalitech@gmail.com" and ""</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:50 PM</span>
+						<span class='node-duration'>0h 0m 0s+181ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:51 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='48'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User "12345678!Aa"</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:51 PM</span>
+						<span class='node-duration'>0h 0m 0s+81ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:51 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='49'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user selects user type</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:51 PM</span>
+						<span class='node-duration'>0h 0m 0s+42ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:51 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='50'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User clicks on the signup button</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:51 PM</span>
+						<span class='node-duration'>0h 0m 0s+43ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:51 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='51'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user should be noticed with a success or failure "Check Password: There should be at least one lowercase character" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:29:51 PM</span>
+						<span class='node-duration'>0h 0m 8s+33ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:29:59 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='52'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:00 PM</span>
+						<span class='node-duration'>0h 0m 20s+268ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='53'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to community platform signup page</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:05 PM</span>
+						<span class='node-duration'>0h 0m 6s+442ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:11 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='54'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When User enters an "testing.amalitech@gmail.com" and ""</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:11 PM</span>
+						<span class='node-duration'>0h 0m 0s+172ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:11 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='55'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User ""</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:11 PM</span>
+						<span class='node-duration'>0h 0m 0s+42ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:11 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='56'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user selects user type</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:11 PM</span>
+						<span class='node-duration'>0h 0m 0s+165ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:12 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='57'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User clicks on the signup button</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:12 PM</span>
+						<span class='node-duration'>0h 0m 0s+43ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:12 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='58'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user should be noticed with a success or failure "Check Password: There should be at least one lowercase character" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:12 PM</span>
+						<span class='node-duration'>0h 0m 8s+89ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:20 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='59'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:20 PM</span>
+						<span class='node-duration'>0h 0m 17s+674ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='60'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to community platform signup page</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:28 PM</span>
+						<span class='node-duration'>0h 0m 2s+213ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:30 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='61'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When User enters an "" and "12345678!Aa"</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:30 PM</span>
+						<span class='node-duration'>0h 0m 0s+125ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:30 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='62'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User "12345678!Aa"</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:30 PM</span>
+						<span class='node-duration'>0h 0m 0s+80ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:30 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='63'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user selects user type</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:30 PM</span>
+						<span class='node-duration'>0h 0m 0s+48ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:30 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='64'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User clicks on the signup button</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:30 PM</span>
+						<span class='node-duration'>0h 0m 0s+40ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:30 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='65'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user should be noticed with a success or failure "Check E-mail: Please enter the correct email address or phone number" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:30 PM</span>
+						<span class='node-duration'>0h 0m 8s+33ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:38 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='66'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Verify valid and invalid credentials</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:39 PM</span>
+						<span class='node-duration'>0h 0m 15s+860ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='67'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to community platform signup page</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:44 PM</span>
+						<span class='node-duration'>0h 0m 2s+190ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:46 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='68'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When User enters an "testing.amalitech@gmail.com" and "12345678!Aa"</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:46 PM</span>
+						<span class='node-duration'>0h 0m 0s+202ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:46 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='69'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User "12345678!Aa"</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:46 PM</span>
+						<span class='node-duration'>0h 0m 0s+78ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:46 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='70'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user selects user type</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:46 PM</span>
+						<span class='node-duration'>0h 0m 0s+40ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:47 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='71'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And User clicks on the signup button</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:47 PM</span>
+						<span class='node-duration'>0h 0m 0s+41ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:47 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='72'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then user should be noticed with a success or failure "User with this email already exists" depending on the credentials used</div>						
+						<span class='node-time'>Sep 15, 2020 02:30:47 PM</span>
+						<span class='node-duration'>0h 0m 8s+27ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:30:55 PM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
@@ -582,6 +2026,447 @@
 
 </div>
 <!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@COMMUNITY-190</span>
+						<span class='category-status right'>
+							<span class='label pass'>11</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 11</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 15, 2020 02:27:59 PM</td>
+										<td class='linked' test-id='1'>Marketplace</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:27:59 PM</td>
+										<td class='linked' test-id='3'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:19 PM</td>
+										<td class='linked' test-id='10'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:37 PM</td>
+										<td class='linked' test-id='17'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:53 PM</td>
+										<td class='linked' test-id='24'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:10 PM</td>
+										<td class='linked' test-id='31'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:26 PM</td>
+										<td class='linked' test-id='38'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:42 PM</td>
+										<td class='linked' test-id='45'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:00 PM</td>
+										<td class='linked' test-id='52'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:20 PM</td>
+										<td class='linked' test-id='59'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:39 PM</td>
+										<td class='linked' test-id='66'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@REQ_COMMUNITY-2</span>
+						<span class='category-status right'>
+							<span class='label pass'>11</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 11</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 15, 2020 02:27:59 PM</td>
+										<td class='linked' test-id='1'>Marketplace</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:27:59 PM</td>
+										<td class='linked' test-id='3'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:19 PM</td>
+										<td class='linked' test-id='10'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:37 PM</td>
+										<td class='linked' test-id='17'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:53 PM</td>
+										<td class='linked' test-id='24'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:10 PM</td>
+										<td class='linked' test-id='31'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:26 PM</td>
+										<td class='linked' test-id='38'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:42 PM</td>
+										<td class='linked' test-id='45'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:00 PM</td>
+										<td class='linked' test-id='52'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:20 PM</td>
+										<td class='linked' test-id='59'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:39 PM</td>
+										<td class='linked' test-id='66'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@TEST_COMMUNITY-268</span>
+						<span class='category-status right'>
+							<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 15, 2020 02:27:59 PM</td>
+										<td class='linked' test-id='3'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:19 PM</td>
+										<td class='linked' test-id='10'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:37 PM</td>
+										<td class='linked' test-id='17'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:53 PM</td>
+										<td class='linked' test-id='24'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:10 PM</td>
+										<td class='linked' test-id='31'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:26 PM</td>
+										<td class='linked' test-id='38'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:42 PM</td>
+										<td class='linked' test-id='45'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:00 PM</td>
+										<td class='linked' test-id='52'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:20 PM</td>
+										<td class='linked' test-id='59'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:39 PM</td>
+										<td class='linked' test-id='66'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@REQ_COMMUNITY-8</span>
+						<span class='category-status right'>
+							<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 15, 2020 02:27:59 PM</td>
+										<td class='linked' test-id='3'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:19 PM</td>
+										<td class='linked' test-id='10'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:37 PM</td>
+										<td class='linked' test-id='17'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:53 PM</td>
+										<td class='linked' test-id='24'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:10 PM</td>
+										<td class='linked' test-id='31'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:26 PM</td>
+										<td class='linked' test-id='38'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:42 PM</td>
+										<td class='linked' test-id='45'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:00 PM</td>
+										<td class='linked' test-id='52'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:20 PM</td>
+										<td class='linked' test-id='59'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:39 PM</td>
+										<td class='linked' test-id='66'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@TESTSET_COMMUNITY-189</span>
+						<span class='category-status right'>
+							<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 15, 2020 02:27:59 PM</td>
+										<td class='linked' test-id='3'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:19 PM</td>
+										<td class='linked' test-id='10'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:37 PM</td>
+										<td class='linked' test-id='17'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:28:53 PM</td>
+										<td class='linked' test-id='24'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:10 PM</td>
+										<td class='linked' test-id='31'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:26 PM</td>
+										<td class='linked' test-id='38'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:29:42 PM</td>
+										<td class='linked' test-id='45'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:00 PM</td>
+										<td class='linked' test-id='52'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:20 PM</td>
+										<td class='linked' test-id='59'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 15, 2020 02:30:39 PM</td>
+										<td class='linked' test-id='66'>Marketplace.Scenario Outline: Verify valid and invalid credentials.Scenario: Verify valid and invalid credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
 <!-- category view -->
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
@@ -592,31 +2477,75 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>12</div>
+					<div class='panel-lead'>60</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>12</div>
+					<div class='panel-lead'>60</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 7, 2020 04:00:44 PM</div>
+					<div class='panel-lead'>Sep 15, 2020 02:27:59 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 7, 2020 04:01:03 PM</div>
+			 		<div class='panel-lead'>Sep 15, 2020 02:30:55 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>18,635ms</div>
+					<div class='panel-lead'>176,345ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>@COMMUNITY-190</td>
+							<td>11</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@REQ_COMMUNITY-2</td>
+							<td>11</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@TEST_COMMUNITY-268</td>
+							<td>10</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@REQ_COMMUNITY-8</td>
+							<td>10</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@TESTSET_COMMUNITY-189</td>
+							<td>10</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -629,22 +2558,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
+				passParent: 60,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 12,
-				exceptionsParent: 12,
+				skipParent: 0,
+				exceptionsParent: 0,
 				
-				passChild: 0,
+				passChild: 60,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 12,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 12,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

@@ -9,7 +9,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @RunWith(Cucumber.class)
 
 @CucumberOptions (
-		features = {"F:\\SignUp\\signup\\src\\test\\java\\Community_Platform\\signup.feature"},
+		//features = {"F:\\SignUp\\signup\\src\\test\\java\\Community_Platform\\signup.feature"},
+		features = {"F:\\SignUp\\signup\\src\\test\\java\\Community_Platform\\1_COMMUNITY-2.feature"},
 		glue = {"steps"},
 		monochrome = true,
 		tags = {},

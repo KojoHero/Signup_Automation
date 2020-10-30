@@ -15,14 +15,14 @@ Scenario Outline: User signs up with valid and invalid credentials
     
 
 Examples:
-    |   email                  |   password   |  confirm password|  message| 
-    |   herogodsway.com        |   12345678!A |        12345678!A|  Invaliddatainput.Passwordsmismatch|
-    |   herogodsway@yahoocom   |   12345678!A |	       12345678!A|  Invaliddatainput.Passwordsmismatch| 
-    |   herogodsway@yahoo.com  |   12354678!A |	       12345678!A|  Passwordmismatch| 
-    |   herogodsway.com        |   12345678!A | 	   12345678!A|  Include@inemail|
-    |   herogodsway.yahoo.com  |   12345678!A | 	    12345678!|  Include@inemail|  
-    |   herogodsway@yahoo.com  |   12345678!A | 	   12345678!A|  Aconfirmationhasbeensenttoyouremail.Pleaseretrievethecodeandconfirmacount|
-    |   herogodsway@yahoo.com  |   12345678!A | 		         |  Passwordmismatch|
-    |   herogodsway@yahoo.com  |              | 	   12345678!A|  Passwordmismatch| 
-    |   herogodsway@yahoo.com  |              | 	          	 |  Passwordmismatch| 
-    |   herogodsway@yahoo.com  |   12345678!A | 	   12345678!A|  Userwiththisemailalreadyexists|        
+    |   email                        |   password   |confirm password|  message| 
+    |   testing.amalitech.com        |   12345678!A |      12345678!A|  |
+    |   testing.amalitech@gmailcom   |   12345678!A |	   12345678!A|  Pleaseenterthecorrectemailaddressorphonenumber| 
+    |   testing.amalitech@gmail.com  |   12354678!A |	   12345678!A|  Pleaseenterthecorrectemailaddressorphonenumber| 
+    |   testing.amalitech.gmail.com  |   12345678!A | 	    12345678!|  Pleaseenterthecorrectemailaddressorphonenumber|  
+    |   testing.amalitech@gmail.com  |   12345678!A | 	   12345678!A|  Aconfirmationhasbeensenttoyouremail.Pleaseretrievethecodeandconfirmacount|
+    |   testing.amalitech@gmail.com  |   12345678!A | 		         |  Pleaseenterthecorrectemailaddressorphonenumber|
+    |   testing.amalitech@gmail.com  |              | 	   12345678!A|  Pleaseenterthecorrectemailaddressorphonenumber| 
+    |   testing.amalitech@gmail.com  |              | 	          	 |  Pleaseenterthecorrectemailaddressorphonenumber|
+    |                                |   12345678!A | 	   12345678!A|  Pleaseenterthecorrectemailaddressorphonenumber| 
+    |   testing.amalitech@gmail.com  |   12345678!A | 	   12345678!A|  Userwiththisemailalreadyexists|        

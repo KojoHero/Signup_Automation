@@ -1,12 +1,12 @@
 [
   {
-    "line": 1,
+    "line": 3,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 10686133000,
+              "duration": 6227349700,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 19,
-        "name": "User signs up with valid and invalid credentials",
+        "line": 33,
+        "name": "Verify valid and invalid credentials",
         "description": "",
-        "id": "sign-up-to-account;user-signs-up-with-valid-and-invalid-credentials;;2",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;2",
         "after": [
           {
             "result": {
-              "duration": 668378200,
+              "duration": 689815800,
               "status": "passed"
             },
             "match": {
@@ -34,26 +34,36 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 4548665300,
+              "status": "passed"
             },
-            "line": 8,
+            "line": 24,
             "name": "User navigates to community platform signup page",
-            "match": {},
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 367245100,
+              "status": "passed"
             },
-            "comments": [
-              {
-                "line": 9,
-                "value": "#    And   User clicks on the signup button on landing page"
-              }
-            ],
-            "line": 10,
-            "name": "User enters an \"herogodsway.com\" and \"12345678!A\"",
-            "match": {},
+            "line": 25,
+            "name": "User enters an \"testing.amalitech.com\" and \"12345678!A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing.amalitech.com",
+                  "offset": 16
+                },
+                {
+                  "val": "12345678!A",
+                  "offset": 44
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
             "matchedColumns": [
               0,
               1
@@ -62,11 +72,20 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 70877400,
+              "status": "passed"
             },
-            "line": 11,
+            "line": 26,
             "name": "User \"12345678!A\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678!A",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
             "matchedColumns": [
               2
             ],
@@ -74,33 +93,70 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 44417400,
+              "status": "passed"
             },
-            "line": 12,
+            "line": 27,
             "name": "user selects user type",
-            "match": {},
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 226989300,
+              "status": "passed"
             },
-            "line": 13,
+            "line": 28,
             "name": "User clicks on the signup button",
-            "match": {},
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8158767600,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "user should be noticed with a success or failure \"Invaliddatainput.Passwordsmismatch\" depending on the credentials used",
-            "match": {},
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
             "matchedColumns": [
               3
             ],
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
           }
         ]
       },
@@ -108,7 +164,7 @@
         "before": [
           {
             "result": {
-              "duration": 5578097300,
+              "duration": 5347977300,
               "status": "passed"
             },
             "match": {
@@ -116,14 +172,14 @@
             }
           }
         ],
-        "line": 20,
-        "name": "User signs up with valid and invalid credentials",
+        "line": 34,
+        "name": "Verify valid and invalid credentials",
         "description": "",
-        "id": "sign-up-to-account;user-signs-up-with-valid-and-invalid-credentials;;3",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;3",
         "after": [
           {
             "result": {
-              "duration": 663362900,
+              "duration": 618143800,
               "status": "passed"
             },
             "match": {
@@ -136,26 +192,36 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 3081556700,
+              "status": "passed"
             },
-            "line": 8,
+            "line": 24,
             "name": "User navigates to community platform signup page",
-            "match": {},
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 195423300,
+              "status": "passed"
             },
-            "comments": [
-              {
-                "line": 9,
-                "value": "#    And   User clicks on the signup button on landing page"
-              }
-            ],
-            "line": 10,
-            "name": "User enters an \"herogodsway@yahoocom\" and \"12345678!A\"",
-            "match": {},
+            "line": 25,
+            "name": "User enters an \"testing.amalitech@gmailcom\" and \"12345678!A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing.amalitech@gmailcom",
+                  "offset": 16
+                },
+                {
+                  "val": "12345678!A",
+                  "offset": 49
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
             "matchedColumns": [
               0,
               1
@@ -164,11 +230,20 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 73824000,
+              "status": "passed"
             },
-            "line": 11,
+            "line": 26,
             "name": "User \"12345678!A\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678!A",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
             "matchedColumns": [
               2
             ],
@@ -176,41 +251,1352 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 46579400,
+              "status": "passed"
             },
-            "line": 12,
+            "line": 27,
             "name": "user selects user type",
-            "match": {},
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 83357600,
+              "status": "passed"
             },
-            "line": 13,
+            "line": 28,
             "name": "User clicks on the signup button",
-            "match": {},
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8025331400,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "user should be noticed with a success or failure \"Invaliddatainput.Passwordsmismatch\" depending on the credentials used",
-            "match": {},
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"Check E-mail: Please enter the correct email address or phone number\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check E-mail: Please enter the correct email address or phone number",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
             "matchedColumns": [
               3
             ],
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5203216000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Verify valid and invalid credentials",
+        "description": "",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 618144300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2107655000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to community platform signup page",
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 189130500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters an \"testing.amalitech@gmail.com\" and \"12354678!A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing.amalitech@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "12354678!A",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73566600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User \"12345678!A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678!A",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42584000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user selects user type",
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38518600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User clicks on the signup button",
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8021950300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"Check Password: There should be at least one lowercase character\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check Password: There should be at least one lowercase character",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5183255000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Verify valid and invalid credentials",
+        "description": "",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 625363600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2283821500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to community platform signup page",
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 199844900,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters an \"testing.amalitech.gmail.com\" and \"12345678!Aa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing.amalitech.gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "12345678!Aa",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71893000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User \"12345678!Aa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678!Aa",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41169200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user selects user type",
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56342700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User clicks on the signup button",
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8045361000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5212953200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Verify valid and invalid credentials",
+        "description": "",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 619877800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2068938500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to community platform signup page",
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 189681300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters an \"testing.amalitech@gmail.com\" and \"12345678!Aa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing.amalitech@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "12345678!Aa",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71499100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User \"12345678!Aa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678!Aa",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41896600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user selects user type",
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41321000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User clicks on the signup button",
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8056967300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"A confirmation has been sent to your email. Please retrieve the code and confirm acount\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "A confirmation has been sent to your email. Please retrieve the code and confirm acount",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5280982600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Verify valid and invalid credentials",
+        "description": "",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 619569900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2014854800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to community platform signup page",
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 204491600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters an \"testing.amalitech@gmail.com\" and \"12345678!A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing.amalitech@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "12345678!A",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48329100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44417800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user selects user type",
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40563000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User clicks on the signup button",
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8026903400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"Check Password: There should be at least one lowercase character\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check Password: There should be at least one lowercase character",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5325745900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Verify valid and invalid credentials",
+        "description": "",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 620743900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2892350200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to community platform signup page",
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180329800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters an \"testing.amalitech@gmail.com\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing.amalitech@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79779300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User \"12345678!Aa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678!Aa",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41240500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user selects user type",
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42598900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User clicks on the signup button",
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8032407900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"Check Password: There should be at least one lowercase character\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check Password: There should be at least one lowercase character",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5312681500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Verify valid and invalid credentials",
+        "description": "",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 671182400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6440781800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to community platform signup page",
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 171299800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters an \"testing.amalitech@gmail.com\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing.amalitech@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41331100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164444000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user selects user type",
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42844000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User clicks on the signup button",
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8089182200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"Check Password: There should be at least one lowercase character\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check Password: There should be at least one lowercase character",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7131912900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "Verify valid and invalid credentials",
+        "description": "",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 616436800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2212427300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to community platform signup page",
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124095000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters an \"\" and \"12345678!Aa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 16
+                },
+                {
+                  "val": "12345678!Aa",
+                  "offset": 23
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80013500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User \"12345678!Aa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678!Aa",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47092900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user selects user type",
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39646600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User clicks on the signup button",
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8033758000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"Check E-mail: Please enter the correct email address or phone number\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check E-mail: Please enter the correct email address or phone number",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5276890200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.setup()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Verify valid and invalid credentials",
+        "description": "",
+        "id": "marketplace;verify-valid-and-invalid-credentials;;11",
+        "after": [
+          {
+            "result": {
+              "duration": 623381200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "signup.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2188610500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to community platform signup page",
+            "match": {
+              "location": "signup.user_navigates_to_community_platform_signup_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 202618200,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters an \"testing.amalitech@gmail.com\" and \"12345678!Aa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testing.amalitech@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "12345678!Aa",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_enters_an_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77957100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User \"12345678!Aa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678!Aa",
+                  "offset": 6
+                }
+              ],
+              "location": "signup.user(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39773300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user selects user type",
+            "match": {
+              "location": "signup.user_selects_user_type()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40779200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User clicks on the signup button",
+            "match": {
+              "location": "signup.user_clicks_on_the_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8026965700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should be noticed with a success or failure \"User with this email already exists\" depending on the credentials used",
+            "match": {
+              "arguments": [
+                {
+                  "val": "User with this email already exists",
+                  "offset": 50
+                }
+              ],
+              "location": "signup.user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@TEST_COMMUNITY-268"
+          },
+          {
+            "line": 22,
+            "name": "@REQ_COMMUNITY-8"
+          },
+          {
+            "line": 1,
+            "name": "@COMMUNITY-190"
+          },
+          {
+            "line": 2,
+            "name": "@REQ_COMMUNITY-2"
+          },
+          {
+            "line": 22,
+            "name": "@TESTSET_COMMUNITY-189"
+          }
         ]
       }
     ],
-    "name": "Sign up to account",
-    "description": "       Verify that user sign up is unsuccessful after passing incorrect credentials\r\n       but successful only with valid credentials",
-    "id": "sign-up-to-account",
+    "name": "Marketplace",
+    "description": "",
+    "id": "marketplace",
     "keyword": "Feature",
-    "uri": "F:/SignUp/signup/src/test/java/Community_Platform/signup.feature"
+    "uri": "F:/SignUp/signup/src/test/java/Community_Platform/1_COMMUNITY-2.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@COMMUNITY-190"
+      },
+      {
+        "line": 2,
+        "name": "@REQ_COMMUNITY-2"
+      }
+    ]
   }
 ]

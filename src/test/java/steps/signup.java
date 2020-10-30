@@ -43,18 +43,18 @@ public class signup {
 
 	@When("^User enters an \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void user_enters_an_and(String email, String password) throws Throwable {
-		driver.findElement(By.id("signup_email")).sendKeys(email);
-		driver.findElement(By.id("signup_password")).sendKeys(password);
+		driver.findElement(By.id("InputEmail")).sendKeys(email);
+		driver.findElement(By.id("InputPassword1")).sendKeys(password);
 	}
 
 	@When("^User \"([^\"]*)\"$")
 	public void user(String c_password) throws Throwable {
-		driver.findElement(By.id("signup_confirm_password")).sendKeys(c_password);
+		driver.findElement(By.id("InputPassword2")).sendKeys(c_password);
 	}
 
 	@Then("^user selects user type$")
 	public void user_selects_user_type() throws Throwable {
-	    WebElement radio = driver.findElement(By.id("inline-radio-2"));
+	    WebElement radio = driver.findElement(By.id("individual"));
 	    radio.click();
 	}
 
@@ -65,9 +65,9 @@ public class signup {
 
 	@Then("^user should be noticed with a success or failure \"([^\"]*)\" depending on the credentials used$")
 	public void user_should_be_noticed_with_a_success_or_failure_depending_on_the_credentials_used(String message) throws Throwable {
-		Thread.sleep(1200);
-	  	String url =driver.findElement(By.xpath("//*[@id=\"__next\"]/div/div/div[2]/form/div[4]")).getText().replaceAll(" ", "");                                         
-	  	Assert.assertEquals(message,url);
+		Thread.sleep(8000);
+	  	String url =driver.findElement(By.xpath("//*[@id=\"myModal\"]/div/div/p")).getText();                                         
+	  	Assert.assertEquals(url,message);      
 	}
 
 	
